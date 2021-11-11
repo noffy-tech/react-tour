@@ -4,10 +4,12 @@ import logo from "./logo.svg";
 import "./App.css";
 
 function App() {
+  // To check visibility
   const [reactTour, setReactTour] = useState(true);
+  // This are the steps
   const steps = [
     {
-      selector: ".App-logo",
+      selector: ".App-logo", // This is selector. It can be Id or class.
       content: function Component() {
         return (
           <div>
@@ -21,7 +23,7 @@ function App() {
               type and
             </p>
           </div>
-        );
+        ); // In the return() you can create user interface.
       },
     },
     {
